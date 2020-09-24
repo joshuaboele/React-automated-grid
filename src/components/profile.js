@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
 import StyledTitle from "./title";
 import StyledDescription from "./description";
 import StyledAvatar from "./avatar";
@@ -16,8 +15,8 @@ const Profile = ({ imageUrl, name, description, className }) => {
 };
 
 const StyledProfile = styled(Profile)`
-    width: calc(100% / 3);
-    margin: 0 10px;
+    width: calc(20% - 10px);
+    margin: 0 5px;
 `;
 
 export default StyledProfile;

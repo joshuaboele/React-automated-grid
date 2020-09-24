@@ -15,6 +15,8 @@ const Grid = ({ users, className }) => (
 
 const StyledGrid = styled(Grid)`
     display: flex;
+    flex-wrap: wrap;
+    margin: 20px 50px 0 30px;
 `;
 
 export default StyledGrid;
