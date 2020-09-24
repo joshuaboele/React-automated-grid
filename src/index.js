@@ -5,7 +5,7 @@ const Title = ({ titleName }) => <h1>{titleName}</h1>;
 
 const Description = ({ descriptionText }) => <p>{descriptionText}</p>;
 
-const Avatar = ({ image }) => <img src={image}></img>;
+const Avatar = ({ image }) => <img alt="Profile picture of a user" src={image}></img>;
 
 const Profile = ({ imageUrl, name, description }) => {
     return (
