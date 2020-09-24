@@ -1,52 +1,16 @@
+// Imports
+import users from "./data";
 import React from "react";
 import ReactDOM from "react-dom";
 
-const Title = ({ titleName }) => <h1>{titleName}</h1>;
+// Components
 
-const Description = ({ descriptionText }) => <p>{descriptionText}</p>;
-
-const Avatar = ({ image }) => <img alt="Profile picture of a user" src={image}></img>;
-
-const Profile = ({ imageUrl, name, description }) => {
-    return (
-        <div>
-            <Avatar image={imageUrl} />
-            <Title titleName={name} />
-            <Description descriptionText={description} />
-        </div>
-    );
-};
-
-const Grid = ({ users }) => (
-    <div>
-        {users.map((user) => (
-            <Profile {...user} />
-        ))}
-    </div>
-);
+import StyledGrid from "./components/grid";
 
 const App = () => {
-    const users = [
-        {
-            imageUrl: "https://via.placeholder.com/200",
-            name: "Joshua",
-            description: "asdasd",
-        },
-        {
-            imageUrl: "https://via.placeholder.com/200",
-            name: "Jan",
-            description: "ppqq",
-        },
-        {
-            imageUrl: "https://via.placeholder.com/200",
-            name: "Pietje",
-            description: "xyz",
-        },
-    ];
-
     return (
         <div className="grid">
-            <Grid users={users} />
+            <StyledGrid users={users} />
         </div>
     );
 };
